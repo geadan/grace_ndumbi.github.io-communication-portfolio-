@@ -1,21 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Evidence of Online Presence</title>
+    <style>
+        /* ====== Global Styles ====== */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1abc9c;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* ====== Image Grid ====== */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .image-card {
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            width: 250px;
+            transition: transform 0.2s;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .image-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #1abc9c;
+        }
+
+        /* Back link */
+        .back-link {
+            display: inline-block;
+            margin: 30px auto;
+            color: #2c3e50;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .back-link:hover {
+            color: #1abc9c;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .image-card {
+                width: 80%;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<h1>Evidence of Professional Online Presence</h1>
+<header>
+    <h1>Evidence of Professional Online Presence</h1>
+</header>
 
-<p>Below are screenshots showing my professional presence on various online platforms.</p>
+<main>
+    <p>Below are screenshots showing my professional presence on various online platforms.</p>
 
-<img src="Facebook.PNG" width="300">
-<img src="Instagram.PNG" width="300">
-<img src="Linkedin.PNG" width="300">
-<img src="Whatsapp.PNG" width="300">
-<img src="Youtube.PNG" width="300">
+    <div class="image-grid">
+        <div class="image-card">
+            <img src="Facebook.PNG" alt="Facebook Profile Screenshot">
+            <div class="caption">Facebook</div>
+        </div>
+        <div class="image-card">
+            <img src="Instagram.PNG" alt="Instagram Profile Screenshot">
+            <div class="caption">Instagram</div>
+        </div>
+        <div class="image-card">
+            <img src="Linkedin.PNG" alt="LinkedIn Profile Screenshot">
+            <div class="caption">LinkedIn</div>
+        </div>
+        <div class="image-card">
+            <img src="Whatsapp.PNG" alt="WhatsApp Profile Screenshot">
+            <div class="caption">WhatsApp</div>
+        </div>
+        <div class="image-card">
+            <img src="Youtube.PNG" alt="YouTube Channel Screenshot">
+            <div class="caption">YouTube</div>
+        </div>
+    </div>
 
-<p><a href="index.html">⬅ Back to Home</a></p>
+    <p><a class="back-link" href="index.html">⬅ Back to Home</a></p>
+</main>
+
+<footer>
+    &copy; 2026 My Communication Skills Portfolio. All rights reserved.
+</footer>
 
 </body>
 </html>
